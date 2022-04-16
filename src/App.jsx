@@ -4,6 +4,7 @@ import ComFilhos from "./components/basicos/ComFilhos";
 import ComParametro from "./components/basicos/ComParametro";
 import DesafioNumeroAleatorio from "./components/basicos/DesafioNumeroAleatorio/DesafioNumeroAleatorio";
 import Familha from "./components/basicos/Familha";
+import Familiares from "./components/basicos/Familiares";
 import Card from "./components/basicos/layout/Card";
 import Primeiro from "./components/basicos/Primeiro";
 
@@ -14,8 +15,24 @@ export default function App(){
 
         <div className="Cards">
             <Card titulo="Familha" color="#E84A5F">
-                <Familha
-                sobrenome="Silva"/>
+                <Familha sobrenome="Silva">
+                    <Familiares
+                    nome="Ana"/>
+                    <Familiares
+                    nome="Luis"/>
+                    <Familiares
+                    nome="Braga"/>
+                </Familha>
+            </Card>
+            <Card titulo="Familha" color="#FF847C">
+                <Familha sobrenome="Vieira">
+                    <Familiares
+                    nome="Ana"/>
+                    <Familiares
+                    nome="Luis"/>
+                    <Familiares
+                    nome="Braga"/>
+                </Familha>
             </Card>
             <Card titulo="DesafioNumeroAleatorio" color="#355C7D">
                 <DesafioNumeroAleatorio
