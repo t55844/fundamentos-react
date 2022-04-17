@@ -6,9 +6,11 @@ export default function IndiretaFilho(props){
     const geraDna = ()=> Math.random() > 0.5
     return(
         <div>
-            <div></div>
-            <button onClick={_=>cb('Joao',geraIdade(),geraDna())}
-            >Atualiza Info</button>
+            <div>
+                <span>Filho </span>
+                <button onClick={_=>cb('Joao',geraIdade(),geraDna())}
+                >Atualiza Info</button>
+            </div>
         </div>
     )
 }

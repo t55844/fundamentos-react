@@ -7,6 +7,7 @@ import Familha from "./components/basicos/Familha";
 import Familiares from "./components/basicos/Familiares";
 import Card from "./components/basicos/layout/Card";
 import Primeiro from "./components/basicos/Primeiro";
+import ComponentesControlados from "./components/componentesControlados/ComponentesControlados";
 import DiretaPai from "./components/comunicacaoDireta/DiretaPai";
 import IndiretaPai from "./components/comunicacaoIndireta/IndiretaPai";
 import RenderizacaoSimples from "./components/condicional/RenderizacaoCondicional";
@@ -21,6 +22,9 @@ export default function App(){
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+            <Card titulo="ComponenteControlado" color="#A8E6CE">
+               <ComponentesControlados/>
+            </Card>
             <Card titulo="ComunicacaoIndireta" color="#DCEDC2">
                <IndiretaPai/>
             </Card>
