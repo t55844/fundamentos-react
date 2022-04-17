@@ -4,10 +4,14 @@ export default function RepeticaoTabela(props){
     
     
     const tr = props.produtos.map(produto=>{
-            const tr =<tbody key={produto.id}>
-                <td>{produto.id}</td>
-                <td>{produto.nome}</td>
-                <td>{produto.preco}</td>
+            const tr =
+            <tbody key={produto.id}>
+                <tr>
+                    <td>{produto.id}</td>
+                    <td>{produto.nome}</td>
+                    <td>{produto.preco}</td>
+                </tr>
+                
             </tbody>
             
             return tr
@@ -15,9 +19,11 @@ export default function RepeticaoTabela(props){
     return(
         <table>
             <thead>
-                <th>id</th>
-                <th>Produto</th>
-                <th>Preco</th>
+                <tr>
+                    <th>id</th>
+                    <th>Produto</th>
+                    <th>Preco</th>
+                </tr>
             </thead>
             {tr}
         </table>
