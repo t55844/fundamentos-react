@@ -7,6 +7,10 @@ import Familha from "./components/basicos/Familha";
 import Familiares from "./components/basicos/Familiares";
 import Card from "./components/basicos/layout/Card";
 import Primeiro from "./components/basicos/Primeiro";
+import Repeticao from "./components/repeticao/Repeticao";
+import RepeticaoTabela from "./components/repeticao/RepeticaoTabela";
+import {alunos} from "./data/alunos";
+import { produtos } from "./data/produtos";
 
 export default function App(){
     return(
@@ -14,6 +18,17 @@ export default function App(){
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+            <Card titulo="RepeticaoTabela" color="#99B898">
+                <RepeticaoTabela produtos={produtos}>
+
+                </RepeticaoTabela>
+            </Card>
+            <Card titulo="Repeticao" color="#FECEAB">
+                <Repeticao
+                alunos={alunos}>
+                    
+                </Repeticao>
+            </Card>
             <Card titulo="Familha" color="#E84A5F">
                 <Familha sobrenome="Silva">
                     <Familiares
