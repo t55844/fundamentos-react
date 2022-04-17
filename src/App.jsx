@@ -7,6 +7,7 @@ import Familha from "./components/basicos/Familha";
 import Familiares from "./components/basicos/Familiares";
 import Card from "./components/basicos/layout/Card";
 import Primeiro from "./components/basicos/Primeiro";
+import DiretaPai from "./components/comunicacaoDireta/DiretaPai";
 import RenderizacaoSimples from "./components/condicional/RenderizacaoCondicional";
 import Repeticao from "./components/repeticao/Repeticao";
 import RepeticaoTabela from "./components/repeticao/RepeticaoTabela";
@@ -19,6 +20,11 @@ export default function App(){
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+            <Card titulo="ComunicacaoDireta" color="#FFD3B5">
+               <DiretaPai>
+                   
+               </DiretaPai>
+            </Card>
             <Card titulo="RenderizacaoSimples" color="#FF8C94">
                <RenderizacaoSimples numero={Math.round(Math.random([1,10]))}>
 
