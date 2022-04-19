@@ -11,6 +11,7 @@ import ComponentesControlados from "./components/componentesControlados/Componen
 import DiretaPai from "./components/comunicacaoDireta/DiretaPai";
 import IndiretaPai from "./components/comunicacaoIndireta/IndiretaPai";
 import RenderizacaoSimples from "./components/condicional/RenderizacaoCondicional";
+import Contador from "./components/contador/Contador";
 import Repeticao from "./components/repeticao/Repeticao";
 import RepeticaoTabela from "./components/repeticao/RepeticaoTabela";
 import {alunos} from "./data/alunos";
@@ -22,6 +23,9 @@ export default function App(){
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+            <Card titulo="Contador Fase 1" color="#363636">
+               <Contador numeroInicial={10} />
+            </Card>
             <Card titulo="ComponenteControlado" color="#A8E6CE">
                <ComponentesControlados/>
             </Card>
