@@ -12,6 +12,7 @@ import DiretaPai from "./components/comunicacaoDireta/DiretaPai";
 import IndiretaPai from "./components/comunicacaoIndireta/IndiretaPai";
 import RenderizacaoSimples from "./components/condicional/RenderizacaoCondicional";
 import Contador from "./components/contador/Contador";
+import MegaSena from "./components/mega/MegaSena";
 import Repeticao from "./components/repeticao/Repeticao";
 import RepeticaoTabela from "./components/repeticao/RepeticaoTabela";
 import {alunos} from "./data/alunos";
@@ -23,6 +24,9 @@ export default function App(){
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+            <Card titulo="MegaSena" color="#474747">
+               <MegaSena/>
+            </Card>
             <Card titulo="Contador Fase 1" color="#363636">
                <Contador numeroInicial={10} />
             </Card>
